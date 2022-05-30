@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Handsome</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/my_website.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <nav class="menu">
+                <a href="https://github.com/kapkande/" class="menu__img">Wlad</a>
+                <div class="menu__for-link close" id="opens">
+                    <a href="" class="menu__link">Portfolio</a>
+                    <a href="" class="menu__link">Skills</a>
+                    <a href="" class="menu__link">About Me</a>
+                    <a href="" class="menu__link">Contact Us</a> 
+                </div>
+                <input  type="checkbox" id="burger_activ" />
+                <label onclick="clik()" class="menu__burger" for="burger_activ">
+                    <div class="burger_line close"></div>
+                    <span class="burger_line close"></span>
+                    <div class="burger_line close"></div>
+                </label>
+            </nav>
+            <div id="block-active" class="main__blok">
+                <div class="title activ">
+                    <samp class="title__line"></samp>
+                    <div class="title__text">I`m a front</div>
+                    <div class="title__slogan">I Work For Quality</div>
+                </div>
+                <div class="text activ">I am a handsome man who started working as a front-end dev. <br> *Actually one bad girl forced me. Help*
+                </div>
+                <div class="btn-row activ">
+                    <div class="btn-row__link">
+                        <a href="">Portfolio</a>
+                    </div>
+                    <div class="btn-row__dropdown">
+                        <a class="btn-row__open" href="">Contact with me</a>
+                        <div class="btn-row__img">
+                            <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path stroke="null" stroke-width="0" d="m8.56232,23.72744q-0.52501,0 -0.91877,-0.43467q-0.39376,-0.43467 -0.39376,-1.01423l0,-12.55709q0,-0.57956 0.39376,-1.01423q0.39376,-0.43467 0.91877,-0.43467l14.87537,0q0.52501,0 0.91877,0.43467q0.39376,0.43467 0.39376,1.01423l0,12.55709q0,0.57956 -0.39376,1.01423q-0.39376,0.43467 -0.91877,0.43467l-14.87537,0zm7.43768,-6.56361l-7.43768,-6.11422l0,11.22894q0,0 0,0q0,0 0,0l14.87537,0q0,0 0,0q0,0 0,0l0,-11.22894l-7.43768,6.11422zm0,-2.17805l7.35018,-5.26432l-14.67849,0l7.32831,5.26432zm-7.43768,-3.93617l0,-1.32815l0,1.32815l0,11.22894q0,0 0,0q0,0 0,0q0,0 0,0q0,0 0,0l0,-11.22894z"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <picture id="image-activ" class="image offFilter">
+            <source class="image__img" media="(max-width: 886px)" srcset="img/im_for_phone.png">
+            <source class="image__img" media="(min-width: 887px)" srcset="img/im.jpg">
+            <img src="img/im.jpg">
+        </picture>
+    </div>
+</body>
+<script src="js/site.js"></script>
+</html>
